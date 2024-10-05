@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* main body section */
+
+.main {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.wrapper {
+    padding: 10px 2rem;
+}
+
+form {
+    padding: 2rem;
+}
+
+.wrapper,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.header-title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.row {
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+label {
+    color: rgba(113, 99, 186, 255);
+    font-weight: 600;
+}
+
+.btn {
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    color: rgba(113, 99, 186, 255);
+    background-color: #C2DEDC;
+}
+
+.form-control {
+    border: 3px solid rgba(113, 99, 186, 255);
+}
+

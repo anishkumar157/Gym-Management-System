@@ -1,0 +1,224 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+.wrapper {
+    margin: 1em 4em;
+}
+
+.logo {
+    width: 100px;
+    margin-left: -3%;
+}
+  
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #111;
+}
+  
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+  
+nav .first {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+nav .first .nav-links {
+    flex: 1;
+    text-align: right;
+}
+  
+nav .first::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #111;
+    display: block;
+    position: absolute;
+    bottom: -20%;
+}
+nav .first .links {
+    padding: 0.2em 0.5em;
+    border-radius: 2em;
+    transition: all 500ms ease;
+}
+nav .first .links:hover {
+    color: #fff;
+    background: #111;
+}
+
+.hero-img1 {
+    background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("../assets/front.jpg");
+    background-position-y: 50%;
+}
+
+.hero-img2 {
+    background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("../assets/about.png");
+}
+  
+.hero-img1,
+.hero-img2 {
+    height: 100vh;
+    width: 47%;
+    left: unset;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+}
+  
+.signup .log {
+    color: #fff;
+    margin-right: 1.5em;
+}
+.signup .sign {
+    padding: 0.5em 1em;
+    background: #fff;
+    border-radius: 5px;
+}
+  
+.hero {
+    width: 30%;
+    margin-top: 4em;
+    
+}
+#he1 {
+    font-size: 4rem;
+    line-height: 1.2em;
+}
+.hero p {
+    margin: 0.5em 0 1em;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.hero .get {
+    padding: 1em 1.4em;
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-right: 2em;
+    transition: transform 500ms ease;
+}
+.hero .get:hover {
+    transform: scale(1.05);
+}
+.hero button,
+.register-form button {
+    font-family: poppins, sans-serif;
+    display: inline-flex;
+    padding: 0.7em;
+    font-weight: 700;
+    font-size: 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    height: 45px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.hero button .button-text,
+.hero button .button-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    height: 100%;
+}
+.hero button .button-icon {
+    font-size: 1.2rem;
+}
+.hero button:hover {
+    background: #111;
+    color: #fff;
+}
+
+.login-form {
+    width: 24%;
+    height: 55%;
+    background: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.5), rgba(0,0,0,0.5));    
+    position: absolute;
+    top: 10em;
+    left: 970px;
+    backdrop-filter: blur(5px);
+    border-radius: 2em;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-form h1 {
+    font-size: 2em;
+}
+
+.login-form input {
+    margin-top: 2em;
+    
+}
+
+.login-form input,
+.register-form .text {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.register-form .text {
+    border: 2px solid #fff;
+    width: 98%;
+    border-radius: 0.2em;
+}
+
+.login-form button {
+    margin-top: 3em;
+    width: 25%;
+    justify-content: center;
+}
+
+.form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.jumbotron {
+    width: 50%;
+    padding-top: 0.5em;
+}
+
+.jumbotron p {
+    font-weight: 500;
+}
